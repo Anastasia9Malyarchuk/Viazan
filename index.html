@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Вязань</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <style type="text/css">
+        @font-face {
+            font-family: 'Navigo';
+            src: local('Navigo-Light'),
+            url('fonts/Navigo-Light.woff2') format('woff2'),
+            url('fonts/Navigo-Light.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Navigo';
+            src: local('Navigo-ExtraLight'),
+            url('fonts/Navigo-ExtraLight.woff2') format('woff2'),
+            url('fonts/Navigo-ExtraLight.woff') format('woff');
+            font-weight: 200;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Navigo';
+            src: local('Navigo-Regular'),
+            url('fonts/Navigo-Regular.woff2') format('woff2'),
+            url('fonts/Navigo-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Navigo';
+            src: local('Navigo-Medium'),
+            url('fonts/Navigo-Medium.woff2') format('woff2'),
+            url('fonts/Navigo-Medium.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Navigo';
+            src: local('Navigo-Bold'),
+            url('fonts/Navigo-Bold.woff2') format('woff2'),
+            url('fonts/Navigo-Bold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Navigo';
+            src: local('Navigo-Black'),
+            url('fonts/Navigo-Black.woff2') format('woff2'),
+            url('fonts/Navigo-Black.woff') format('woff');
+            font-weight: 900;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Navigo';
+            src: local('Navigo-Thin'),
+            url('fonts/Navigo-Thin.woff2') format('woff2'),
+            url('fonts/Navigo-Thin.woff') format('woff');
+            font-weight: 100;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar-wrapper">
+    <div class="container">
+        <div class="navbar">
+
+            <div class="navbar-top-line-left">
+                <a href="#" class="navbar-logo-link">
+                    <svg class="navbar-logo-img" width="113" height="38" viewBox="0 0 113 38" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M57.93 29H52.476V15.5H57.858C59.154 15.5 60.186 15.83 60.954 16.49C61.734 17.15 62.124 18.026 62.124 19.118C62.124 19.766 61.962 20.342 61.638 20.846C61.314 21.35 60.876 21.71 60.324 21.926C61.044 22.154 61.608 22.538 62.016 23.078C62.424 23.618 62.628 24.248 62.628 24.968C62.628 26.204 62.208 27.188 61.368 27.92C60.528 28.64 59.382 29 57.93 29ZM55.338 17.876V20.936H57.39C57.954 20.936 58.398 20.804 58.722 20.54C59.046 20.264 59.208 19.892 59.208 19.424C59.208 18.956 59.052 18.584 58.74 18.308C58.428 18.02 58.002 17.876 57.462 17.876H55.338ZM55.338 23.204V26.624H57.624C58.272 26.624 58.776 26.456 59.136 26.12C59.508 25.784 59.694 25.364 59.694 24.86C59.694 24.368 59.514 23.972 59.154 23.672C58.806 23.36 58.302 23.204 57.642 23.204H55.338ZM69.4954 29V25.958H68.6854L66.2734 29H64.0954V27.776L66.0574 25.562C64.7854 25.094 64.1494 24.242 64.1494 23.006C64.1494 22.106 64.4794 21.368 65.1394 20.792C65.7994 20.204 66.7654 19.91 68.0374 19.91H72.2134V29H69.4954ZM68.2534 24.158H69.4954V21.836H68.2534C67.3294 21.836 66.8674 22.232 66.8674 23.024C66.8674 23.78 67.3294 24.158 68.2534 24.158ZM77.8234 29.27C76.1194 29.27 74.8474 28.67 74.0074 27.47V26.264H76.1494C76.2334 26.444 76.4014 26.66 76.6534 26.912C76.8934 27.164 77.2834 27.29 77.8234 27.29C78.2914 27.29 78.6454 27.194 78.8854 27.002C79.1254 26.81 79.2454 26.558 79.2454 26.246C79.2454 25.61 78.7594 25.292 77.7874 25.292H76.4374V23.564H77.6974C78.5134 23.564 78.9214 23.234 78.9214 22.574C78.9214 22.286 78.8194 22.058 78.6154 21.89C78.4114 21.722 78.1114 21.638 77.7154 21.638C76.9954 21.638 76.4854 21.974 76.1854 22.646H74.0974V21.422C74.9014 20.234 76.1734 19.64 77.9134 19.64C79.0414 19.64 79.9174 19.862 80.5414 20.306C81.1654 20.75 81.4774 21.38 81.4774 22.196C81.4774 23.18 81.0094 23.84 80.0734 24.176C81.2374 24.524 81.8194 25.268 81.8194 26.408C81.8194 27.32 81.4714 28.028 80.7754 28.532C80.0914 29.024 79.1074 29.27 77.8234 29.27ZM86.0284 29.27C85.0324 29.27 84.2884 28.988 83.7964 28.424C83.2924 27.872 83.0404 27.212 83.0404 26.444C83.0404 25.556 83.3644 24.866 84.0124 24.374C84.6724 23.87 85.6504 23.618 86.9464 23.618C87.2224 23.618 87.4984 23.636 87.7744 23.672C88.0624 23.696 88.2784 23.72 88.4224 23.744L88.6384 23.798V23.402C88.6384 22.394 88.1404 21.89 87.1444 21.89C86.9284 21.89 86.7244 21.92 86.5324 21.98C86.3524 22.028 86.2084 22.094 86.1004 22.178C85.9924 22.262 85.8964 22.346 85.8124 22.43C85.7284 22.514 85.6744 22.58 85.6504 22.628L85.5964 22.718H83.5444V21.512L83.5624 21.494C83.9104 20.774 84.5404 20.252 85.4524 19.928C85.9684 19.736 86.5504 19.64 87.1984 19.64C88.5664 19.64 89.5984 19.97 90.2944 20.63C91.0024 21.278 91.3564 22.232 91.3564 23.492V29H88.9084L88.7284 27.848C88.1524 28.796 87.2524 29.27 86.0284 29.27ZM86.9104 27.182C87.4984 27.182 87.9364 27.014 88.2244 26.678C88.5004 26.342 88.6384 26.018 88.6384 25.706V25.31C88.2184 25.214 87.7144 25.166 87.1264 25.166C86.1904 25.166 85.7224 25.508 85.7224 26.192C85.7224 26.852 86.1184 27.182 86.9104 27.182ZM96.2665 29H93.5485V19.91H96.2665V23.276H99.4705V19.91H102.188V29H99.4705V25.49H96.2665V29ZM108.568 29H104.5V19.91H107.218V22.646H108.604C109.876 22.646 110.842 22.928 111.502 23.492C112.174 24.056 112.51 24.806 112.51 25.742C112.51 26.642 112.192 27.41 111.556 28.046C110.92 28.682 109.924 29 108.568 29ZM107.218 24.626V27.038H108.352C109.312 27.038 109.792 26.618 109.792 25.778C109.792 25.406 109.666 25.124 109.414 24.932C109.162 24.728 108.814 24.626 108.37 24.626H107.218Z"
+                              fill="black"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M39.4452 16.8864L36.2182 18.0207L35.2508 15.5249L38.4547 14.3663C38.4818 11.1607 43.3724 9.89843 44.7459 13.3581C46.1191 16.8155 41.5786 19.0371 39.4452 16.8864ZM36.4945 6.4379C31.9595 6.23508 32.4561 -0.186112 36.7139 0.00414532C40.9549 0.193954 40.6361 6.62277 36.4945 6.4379ZM21.7737 19.1156C17.6493 17.6873 13.6123 15.6672 10.2066 12.9084C10.8783 12.2632 11.6295 11.6834 12.4526 11.1777C15.0659 13.2549 18.0392 14.8837 21.1618 16.141L22.7131 14.6921C19.8235 13.5232 17.0383 12.0137 14.5553 10.125C16.2717 9.44522 18.236 9.06067 20.444 9.06067C23.0451 9.06067 25.2834 9.60228 27.1689 10.5298L31.9536 6.06053L33.699 7.83701L21.7737 19.1156ZM20.0247 20.77L18.1324 22.5595C14.3129 21.1272 10.6417 19.1524 7.54314 16.5229C7.95516 15.7296 8.42508 14.9649 8.98456 14.2591C12.2523 16.9882 16.0646 19.1452 20.0247 20.77ZM34.1689 27.5457C33.9541 28.3682 33.6646 29.1665 33.3173 29.9369C25.1509 29.6 13.8588 27.0055 6.08951 20.8005C6.24961 19.9179 6.47847 19.0478 6.78964 18.2065C14.5499 24.5361 25.4711 27.2352 34.1689 27.5457ZM5.85477 22.8557C8.12748 24.5406 10.6471 25.9626 13.2885 27.141L8.33282 31.8278C7.60419 30.7743 7.03025 29.63 6.62275 28.4261L0 30.7545L0.312526 28.1627L6.03569 26.0928C5.8593 25.0252 5.80366 23.9384 5.85477 22.8557ZM6.71772 33.3373L1.58253 38L1.14201 35.143L5.18856 31.4603L6.71772 33.3373ZM17.8891 28.9246L11.4047 34.9738C10.7656 34.5125 10.1876 33.9992 9.65936 33.4504L15.3748 28.0151C16.2061 28.3408 17.0451 28.6442 17.8891 28.9246ZM23.1658 30.3906L16.2147 37.191C15.2618 36.9473 14.3757 36.6274 13.5558 36.2415L20.3142 29.6668C21.2658 29.9342 22.2183 30.1761 23.1658 30.3906ZM32.3702 31.6986C30.1251 35.2323 26.2567 37.746 20.7678 37.746C19.9858 37.746 19.245 37.6926 18.5263 37.611L25.4661 30.8595C27.8514 31.2988 30.1811 31.5743 32.3702 31.6986ZM34.5271 25.7544C33.3901 25.719 32.196 25.6391 30.9618 25.513L34.6221 21.952C34.7388 23.2183 34.7048 24.498 34.5271 25.7544ZM20.3164 23.3152L30.8627 13.2845C31.4588 13.9212 31.9943 14.6055 32.4502 15.3401L23.0555 24.1049C22.1423 23.8702 21.2278 23.6064 20.3164 23.3152ZM34.2209 19.5764L28.4733 25.1989C27.4819 25.0508 26.4752 24.8754 25.4566 24.6636L33.3344 17.0003C33.7062 17.8282 34.002 18.692 34.2209 19.5764Z"
+                              fill="black"/>
+                    </svg>
+
+                </a>
+            </div>
+
+            <div class="navbar-top-line-center">
+                <ul class="main-menu">
+                    <li class="main-menu-item"><a class="main-menu-link" href="#">Каталог</a></li>
+                    <li class="main-menu-item"><a class="main-menu-link" href="#">Производство</a></li>
+                    <li class="main-menu-item"><a class="main-menu-link active" href="#">Блог</a></li>
+                    <li class="main-menu-item"><a class="main-menu-link" href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-top-line-right">
+                <a class="navbar-menu-button" href="#">
+                    <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M17.7365 26.6512L15.5886 22.2104L21.0591 19.9125L23.3596 24.2452C24.8558 27.7449 19.0641 29.8509 17.7365 26.6512ZM9.56855 2.28761C21.5664 -2.65752 29.2277 15.0732 17.5109 19.9028C4.68117 25.1911 -2.47442 7.252 9.56855 2.28761ZM10.5552 4.61501C1.65719 8.28294 6.93999 21.5275 16.419 17.6205C25.0754 14.0519 19.4197 0.961045 10.5552 4.61501Z"
+                              fill="black"/>
+                    </svg>
+
+                </a>
+                <a class="navbar-menu-button" href="#">
+                    <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M7.90214 18.5933L3.76794 4.93354C3.76794 4.93354 2.82546 4.84401 2.29822 4.83094C1.22274 4.80366 0.704181 1.94137 2.05602 1.86463C2.46454 1.84161 5.88306 1.56195 5.88306 1.56195L7.21698 7.06512L25.4859 8.05986L23.2716 18.0828L7.90214 18.5933ZM8.22246 20.232C11.9767 20.232 12.0713 26.0544 8.48286 26.0544C4.22658 26.0546 4.5399 20.232 8.22246 20.232ZM20.8964 20.3358C24.6506 20.3358 24.7447 26.1581 21.1568 26.1581C16.9002 26.1581 17.2133 20.3358 20.8964 20.3358Z"
+                              fill="black"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main>
+    <div class="container hero-wrap">
+        <div class="hero" style="background-image: url(img/woman.png)">
+            <div class="row">
+                <div class="col"><h1 class="hero-title">Научные факты о шерсти</h1></div>
+            </div>
+            <div class="row">
+
+                <div class="col-12">
+                    <p class="hero-text">Исследования мировых институтов <br/>
+                        здоровья за последние 5 лет подтверждают, <br/>
+                        что шерстяная одежда полезна для здоровья</p>
+                </div>
+                <div class="col-12">
+                    <ul class="hero-logo-list">
+                        <li><img src="img/hero-logo-img-1.png" alt="" class="hero-logo-img"></li>
+                        <li><img src="img/hero-logo-img-2.png" alt="" class="hero-logo-img"></li>
+                        <li><img src="img/hero-logo-img-3.png" alt="" class="hero-logo-img"></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="section">
+
+            <h2 class="section-title">Уменьшает симптомы экземы</h2>
+
+            <div class="row no-gutters">
+                <div class="col">
+                    <div class="content-block">
+                        <p>Исследование ученых из института Мердока показало, что шерсть мериноса уменьшает симптомы
+                            экземы у детей.</p>
+                        <p>В течении 12 недель исследователи наблюдали за детьми, которые носили тончайшие мериносовые
+                            шерстяные ткани на коже в течении 6 недель, прежде чем перейти на хлопок, и наоборот.
+                            Оказалось, что благодаря шерсти легче переносить болезнь: проходит зуд, исчезают царапины,
+                            шелушение кожи и кровотечения.</p>
+                        <p style="margin-top: 36px;"><a href="/" class="text-primary">Исследование института Мердока, 2017</a></p>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <img src="img/chart.png" alt="" class="img">
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</main>
+
+<div class="container">
+    <footer class="footer">
+        <ul class="footer-social-list">
+            <li class="footer-social-list-item">
+                <a class="footer-social-link" href="#">
+                    <img src="img/ok-icon.svg" class="footer-social-icon"/>
+                </a>
+            </li>
+            <li class="footer-social-list-item">
+                <a class="footer-social-link" href="#">
+                    <img src="img/telegram-icon.svg" class="footer-social-icon" alt=""/>
+                </a>
+            </li>
+            <li class="footer-social-list-item">
+                <a class="footer-social-link" href="#">
+                    <img src="img/whatsapp-icon.svg" class="footer-social-icon" alt=""/>
+                </a>
+            </li>
+            <li class="footer-social-list-item">
+                <a class="footer-social-link" href="#">
+                    <img src="img/vk-icon.svg" class="footer-social-icon" alt=""/>
+                </a>
+            </li>
+            <li class="footer-social-list-item">
+                <a class="footer-social-link" href="#">
+                    <img src="img/instagram-icon.svg" class="footer-social-icon" alt=""/>
+                </a>
+            </li>
+        </ul>
+        <div class="footer-copyright">
+            <p>Фабрика шерстяных изделий «Вязань» 2020</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
